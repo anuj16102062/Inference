@@ -133,7 +133,7 @@ def cart_quantity(request, pk):
     action = request.GET.get('action')
     if action == 'add':
         order_product.quantity += 1 
-
+        
     elif action == 'remove':
         order_product.quantity -= 1
 
